@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página CSS Avançada</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
 
-    <header>
+    <header class="cabecalho">
         <p>Minha página</p>
 
         <hr>
@@ -16,79 +18,90 @@
 
 
     <main id="principal">
-        <!-- 1° Parte -->
-    <div class="card">
-        <h1 class="">Bem-vindo(a)!</h1>
-        <p class="introducao">Esta é uma atividade de <b>CSS avançado</b> com layout moderno.</p>
+        <div class="coluna-esquerda">
+            <!-- 1° Parte -->
+            <div class="bloco">
+                <h1 class="">Bem-vindo(a)!</h1>
+                <p class="introducao">Esta é uma atividade de <b style="color: rgb(218, 218, 218);">CSS avançado</b> com
+                    layout moderno.</p>
+                <br>
+                <span class="botao"><b>Começar</b></span>
 
-        <span class="botao">Começar</span>
+            </div>
 
-    </div>
+            <!-- 2° parte -->
+            <div class="bloco">
+                <h2>Sobre</h2>
+                <p>Nesta página você praticará seletores avançados, pseudo-classes, pseudo-elementos, transições, box
+                    model, positioning e layout com <b style="color: rgb(218, 218, 218);">Flexbox e CSS Grid.</b></p>
 
-    <!-- 2° parte -->
-    <div class="card">
-        <h2>Sobre</h2>
-        <p>Nesta página você praticará seletores avançados, pseudo-classes, pseudo-elementos, transições, box model, positioning e layout com <b>Flexbox e CSS Grid.</b></p>
+                <ul class="check-list">
+                    <li>Seletores combinados e de atributo</li>
+                    <li>Pseudo-classes (!houver, !focus, !first-child)</li>
+                    <li>Pseudo-elementos(!!before, !!after)</li>
+                    <li>Transições e efeitos</li>
+                    <li>Responsividade com @media</li>
 
-        <ul>
-            <li>Seletores combinados e de atributo</li>
-            <li>Pseudo-classes (!houver, !focus, !first-child)</li>
-            <li>Pseudo-elementos(!!before, !!after)</li>
-            <li>Transições e efeitos</li>
-            <li>Responsividade com @media</li>
-            
-        </ul>
-    </div>
+                </ul>
+            </div>
 
-    <!-- 3° Parte -->
-     <div class="card">
-        <h2>Serviços</h2>
+            <!-- 3° Parte -->
+            <div class="bloco">
+                <h2>Serviços</h2>
 
-        <div>
-            <h2>Layout Responsivo</h2>
+                <div class="boxes">
+                    <div class="box">
+                        <h2>Layout Responsivo</h2>
 
-            <p>Monte páginas que se adaptam a qualquer tela.</p>
+                        <p>Monte páginas que se adaptam a qualquer tela.</p>
 
-            <span><u>Saiba mais</u></span>
+                        <span><u>Saiba mais</u></span>
+                    </div>
+
+                    <div class="box">
+                        <h2>Componentes Reutilizáveis</h2>
+
+                        <p>Crie cartõesm, botões e barras de navegação escaláveis.</p>
+
+                        <span><u>Saiba mais</u></span>
+                    </div>
+
+                    <div class="box">
+                        <h2>Acessabilidade</h2>
+
+                        <p>Aprenda boas práticas para tornar sua UI inclusiva.</p>
+                        <br>
+                        <span><u>Saiba mais</u></span>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div>
-            <h2>Componentes Reutilizáveis</h2>
 
-            <p>Crie cartõesm, botões e barras de navegação escaláveis.</p>
+        <div class="coluna-direita">
+            <!-- 4° Parte -->
+            <div class="bloco">
+                <h3>Dica Rápida</h3>
 
-            <span><u>Saiba mais</u></span>
+                <p>Use box-sizing: border-box para facilitar o cálculo de larguras.</p>
+
+                <span style="color: blue;">Voltar ao topo</span>
+            </div>
+
+            <!-- 5° Parte -->
+            <div class="bloco">
+                <h3>Links Úteis</h3>
+
+                <ul>
+                    <li><a href="">MDN CSS</a></li>
+                    <li><a href="">CSS-Tricks</a></li>
+                    <li><a href="">web.dev CSS</a></li>
+                </ul>
+            </div>
         </div>
 
-        <div>
-            <h2>Acessabilidade</h2>
-
-            <p>Aprenda boas práticas para tornar sua UI inclusiva.</p>
-
-            <span><u>Saiba mais</u></span>
-        </div>
-     </div>
-
-     <!-- 4° Parte -->
-      <div class="card">
-        <h3>Dica Rápida</h3>
-
-        <p>Use box-sizing: border-box para facilitar o cálculo de larguras.</p>
-
-        <span style="color: blue;">Voltar ao topo</span>
-      </div>
-
-      <!-- 5° Parte -->
-       <div class="card">
-            <h3>Links Úteis</h3>
-
-            <ul>
-                <li><a href="">MDN CSS</a></li>
-                <li><a href="">CSS-Tricks</a></li>
-                <li><a href="">web.dev CSS</a></li>
-            </ul>
-       </div>
     </main>
-    
+
 </body>
+
 </html>

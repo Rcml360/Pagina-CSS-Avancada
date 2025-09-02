@@ -1,50 +1,114 @@
-.introducao{
-    font-style: italic;
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: rgb(3, 22, 48);
+  color: rgb(162, 175, 199);
+
 }
 
-ul, li{
-    margin: 4px 0;
-}
-
-a[target="_blank"]{
-    text-decoration: underline;
-}
-
-.botao{
-    background: #3498db;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 6px;
-  transition: 0.3s; /* suaviza o efeito */
-}
-
-.boato:hover {
-  background: #2980b9;   /* muda a cor */
-  transform: translateY(-2px); /* leve elevação */
-}
-
-.botao:focus {
-  outline: 2px solid #f39c12; /* destaque quando em foco */
-}
-h1::first-letter {
-  font-size: 2em;   /* aumenta a primeira letra */
-  font-weight: bold;
-}
-
-.card {
-  position: relative;
-  padding: 20px;
-  background: white;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.card::before {
-  content: "";  /* obrigatório para aparecer */
-  position: absolute;
-  top: 0;
-  left: 0;
+#principal {
+  display: flex;
+  max-width: 900px;
   width: 100%;
-  height: 5px;
-  background: linear-gradient(to right, #3498db, #9b59b6); /* detalhe sutil */
+  margin: 0 auto;
+}
+
+.coluna-esquerda,
+.coluna-direita {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+/* Ajuste opcional de largura */
+.coluna-esquerda {
+  flex: 4;
+  /* ocupa mais espaço */
+}
+
+.coluna-direita {
+  flex: 2.5;
+  /* ocupa menos espaço */
+}
+
+ul,
+li {
+  margin: 4px 0;
+}
+
+a[target="_blank"] {
+  text-decoration: underline;
+}
+
+.botao {
+
+  background: #3498db;
+  color: white;
+  padding: 12px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  /* suaviza o efeito */
+
+  box-shadow: 0px 6px 12px rgb(40, 98, 133);
+}
+
+.botao:hover,
+.botao:focus {
+  background-color: rgb(37, 175, 218);
+  transform: sacle(1.05);
+}
+
+.bloco {
+  background-color: rgb(22, 34, 58);
+  padding: 5px;
+  border: 5px solid rgb(26, 36, 58);
+  border-radius: 8px;
+  margin: 10px;
+
+  box-shadow: 0px 0px 50px rgb(2, 18, 27);
+  flex: 1;
+
+}
+
+.boxes {
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.box {
+  flex: 1;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border: 3px dotted #81818163;
+  border-radius: 8px;
+  margin: 0 10px;
+}
+
+.check-list {
+  list-style: none;
+  /* remove marcador padrão */
+  padding: 0;
+}
+
+.check-list li::before {
+  content: "✔";
+  /* símbolo de visto */
+  color: rgb(46, 187, 212);
+  /* cor azul */
+  font-weight: bold;
+  margin-right: 8px;
+  /* espaço entre ícone e texto */
+}
+
+
+p {
+  color: rgb(168, 168, 168);
+}
+
+h1,
+h2,
+h3 {
+  color: rgb(235, 235, 235);
+
 }
