@@ -5,6 +5,39 @@ body {
 
 }
 
+.cabecalho {
+  display: flex;              /* coloca logo e menu lado a lado */
+  justify-content: space-between; /* logo à esquerda, menu à direita */
+  align-items: center;        /* centraliza verticalmente */
+  padding: 0px 10px;         /* espaço interno do header */
+  border-bottom: 2px solid #cccccc4f; /* linha cinza embaixo do header */
+}
+
+.logo{
+  color: white;
+}
+
+.menu ul {
+  list-style: none;    /* tira as bolinhas da lista */
+  display: flex;       /* deixa os itens lado a lado */
+  gap: 25px;           /* espaço entre os links */
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li a {
+  color: white;
+  text-decoration: none; /* tira o sublinhado */
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.menu ul li a:hover {
+  color: #1e90ff; /* cor ao passar o mouse */
+}
+
+
+
 #principal {
   display: flex;
   max-width: 900px;
@@ -111,4 +144,8 @@ h2,
 h3 {
   color: rgb(235, 235, 235);
 
+}
+
+a{
+  color: #1e90ff;
 }
